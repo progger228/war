@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<link rel="icon" href="1.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ФОНД ПОМОЩЬ ГЕРОЯМ</title>
 </head>
@@ -9,26 +10,61 @@
 	body {
 		background-image: url("2.jpg");
 	}
-	div {
-		height: 100%;
-		width: 35%;
-		background: #F0E68C;
-		margin: auto;
-		border-style: solid;
-		border-color: balck;
-	}
 	img {
 		max-width: 20%;
 	}
 	h3#about {
 		font-size: 120%;
 	}
+	h3#about_m {
+		font-size: 10px;
+	}
+	h3#m1 {
+		font-size: 10px;
+	}
+	h1#m {
+		font-size: 15px;
+	}
+	@media  screen and (min-width: 525px) {
+	  .header-pc {
+	    display: block
+		height: 100%;
+		width: 35%;
+		background: #F0E68C;
+		margin: auto;
+		border-style: solid;
+		border-color: balck;
+
+	  }
+	  .header-mobile {
+	    display: none
+	  }
+	}
+
+	@media  screen and (max-width: 525px) {
+	  .header-pc {
+	    display: none
+	  }
+	  .header-mobile {
+	    display: block
+		height: 100%;
+		width: 50%;
+		background: #F0E68C;
+		margin: auto;
+		border-style: solid;
+		border-color: balck;
+	  }
+	}
 </style>
 <body>
-	<div><p align="center"><img src="1.png"></p>
+	<div class="header-pc"><p align="center"><img src="1.png"></p>
 		<h1 align="center">О НАС</h1><p></p>
 		<h3 align="center" id="about">Наш фонд официально одобрен Министерством обороны Российской Федерации. Все пожертвованные нашему фонду деньги пойдут на поставки продовольственных товаров первой необходимости напрямую в зону боевых действий. Жертвуя деньги нашему фонду вы не только помогайте Российской армии, но и Русской экономике, которая несёт крупные убытки.</h3>
 		<h3 align="center"><a href="index.html"><- ВЕРНУТЬСЯ НАЗАД</a></h3></div>
+	<div class="header-mobile"><p align="center"><img src="1.png"></p>
+		<h1 align="center" id="m">О НАС</h1><p></p>
+		<h3 align="center" id="about_m">Наш фонд официально одобрен Министерством обороны Российской Федерации. Все пожертвованные нашему фонду деньги пойдут на поставки продовольственных товаров первой необходимости напрямую в зону боевых действий. Жертвуя деньги нашему фонду вы не только помогайте Российской армии, но и Русской экономике, которая несёт крупные убытки.</h3>
+		<h3 align="center" id="m1"><a href="index.html"><- ВЕРНУТЬСЯ НАЗАД</a></h3></div>
 
 </body>
 </html>
