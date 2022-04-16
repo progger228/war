@@ -9,27 +9,63 @@
 	body {
 		background-image: url("2.jpg");
 	}
-	div {
-		height: 100%;
-		width: 35%;
-		background: #F0E68C;
-		margin: auto;
-		border-style: solid;
-		border-color: balck;
-	}
 	img {
 		max-width: 20%;
 	}
 	h2 {
 		font-size: 150%;
 	}
+	h3#about_m {
+		font-size: 10px;
+	}
+	h3#card {
+		font-size: 15px;
+	}
+	h1#m {
+		font-size: 50%;
+	}
+	@media  screen and (min-width: 525px) {
+	  .header-pc {
+	    display: block
+		height: 100%;
+		width: 35%;
+		background: #F0E68C;
+		margin: auto;
+		border-style: solid;
+		border-color: balck;
+	  }
+	  .header-mobile {
+	    display: none
+	  }
+	}
+
+	@media  screen and (max-width: 525px) {
+	  .header-pc {
+	    display: none
+	  }
+	  .header-mobile {
+	    display: block
+		height: 100%;
+		width: 50%;
+		background: #F0E68C;
+		margin: auto;
+		border-style: solid;
+		border-color: balck;
+	  }
+	}
 </style>
 <body>
-	<div><p align="center"><img src="1.png"></p>
+	<div class="header-pc"><p align="center"><img src="1.png"></p>
 		<h1 align="center">ФОНД ПОМОЩИ РОССИЙСКОЙ АРМИИ</h1>
 		<h3 align="center"><a href="o_nas.html">О НАС</a></h3>
 		<h2 align="center">Ежедневно Российская армия испытывает проблемы с продовольствием. Вы можете помочь ей пожертвовав некоторую сумму денег по номеру карты.</h2>
 		<h1 align="center">4276 1606 1474 6171</h1></div>
+	<div class="header-mobile"><p align="center"><img src="1.png"></p>
+		<h1 align="center" id="m">ФОНД ПОМОЩИ РОССИЙСКОЙ АРМИИ</h1><p></p>
+		<h1 align="center" id="m"><a href="o_nas.html">О НАС</a></h3>
+		<h3 align="center" id="about_m">Ежедневно Российская армия испытывает проблемы с продовольствием. Вы можете помочь ей пожертвовав некоторую сумму денег по номеру карты.</h3>
+		<h3 align="center" id="card">4276 1606 1474 6171</h3></div></div>
+
 
 </body>
 </html>
